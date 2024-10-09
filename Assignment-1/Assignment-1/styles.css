@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0f3d2e; 
+    color: #e0f2e9; 
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #123c32; 
+}
+
+header h1 {
+    color: white;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #e0f2e9; 
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Home Section */
+#home {
+    position: relative;
+    background: url('images/farming.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+#home .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+}
+
+.home-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.home-content h2 {
+    font-size: 48px;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); 
+}
+
+.home-content p {
+    font-size: 24px;
+    margin: 20px 0;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.home-content .btn {
+    padding: 10px 20px;
+    background-color: white;
+    color: #4CAF50; 
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 40px; 
+}
+
+.home-content .btn:hover {
+    background-color: #45a049;
+}
+
+/* Section Styling */
+section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #1a5745; 
+}
+
+/* Service and Technology Sections */
+#services, #technology {
+    background-color: #1a5745; 
+}
+
+.service-box, .tech-box {
+    display: flex;
+    justify-content: space-around;
+}
+
+.service, .tech {
+    width: 30%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    color: #123c32; 
+}
+
+/* Footer */
+footer {
+    background-color: #123c32; 
+    color: #e0f2e9; 
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .social-icons img {
+    width: 30px;
+    margin: 0 10px;
+}
+
+/* Contact Form */
+#contact-form {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-form input, #contact-form textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #0f3d2e; 
+    color: white; 
+}
+
+#contact-form button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact-form button:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 768px) {
+    .home-content h2 {
+        font-size: 36px;
+    }
+    
+    .home-content p {
+        font-size: 18px;
+    }
+    
+    .home-content .btn {
+        padding: 8px 15px;
+        font-size: 18px;
+    }
+}
+
+header img {
+    height: 50px; 
+    width: 50px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    margin-right: 10px; 
+}
